@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>CasiGO | Sobre nós</title>
+        <link rel="stylesheet" href="../../assets/css/style.css"/>
+        <link rel="stylesheet" href="style_about-us.css"/>
+        <link rel="icon" href="../../assets/images/logo.png"/>
+
+        <link href="../../assets/icons/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+        <!--Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap" rel="stylesheet"/>
+
+        <!--Open Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="../home/index.html"><img src="../../assets/images/casigo-full-logo.png"/></a>
+            </div>
+            <div class="header-mid">
+                <ul>
+                    <div class="content">
+                        <li><a href="../games/games-gallery.html">Jogos</a></li>
+                    </div>
+                    <div class="content">
+                        <li><a href="../store/store-gallery.html">Merchandising</a></li>
+                    </div>
+                    <div class="content">
+                        <li class="active"><a href="../about/about-us.html">Sobre Nós</a></li>
+                    </div>
+            </div>
+            <div class="header-right">
+                <img src="../../assets/images/profile.jpg" alt="profile icon" class="iconImage_navbar" onclick="upload()"></img>
+                <p id="user">John_Doe<br/>42.12€</p>
+            </div>
+        </header>
+
+        <div class="dropdown_container">
+            <div class="dropdown_menu">
+                <div>
+                    <p>John_Doe</p>
+                    <span class="bi bi-cart3"><span>0</span></span>
+                </div>
+                <button id="prima" onclick="window.location.href='../profile/profile-page.html'">Perfil</button>
+                <button onclick="window.location.href='../account_movements/movements.html'">Movimentos</button>
+                <button onclick="window.location.href='../home/index.html'">Terminar Sessão</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div id="banner">
+                    <img src="../../assets/images/headquarters.png" alt="Sede">
+                </div>
+            </div>
+            <div class="col-4">
+                <h2 class="page-header">Sobre nós</h2>
+                <p class="page-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis pariatur molestias aperiam sequi vel placeat nemo ea itaque aspernatur enim? 
+                    Sed delectus in officia facere corrupti, nobis amet voluptates dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa, illo id quidem laudantium, fugiat quia iusto non fuga aliquid nemo voluptates illum ut, temporibus hic! Omnis voluptatem nobis iste molestias.
+                </p>
+                <h2 class="page-header">Contactos</h2>
+                <p class="contact-list">
+                    <span>Email: </span>geral@casigo.pt<br>
+                    <span>Telefone: </span>+351 255 007 007<br>
+                    <span>Localização: </span>Av. Carlos de Oliveira Campos, 4475-690 Maia
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <div class=footer-container>
+                <div class="left">
+                    <div><p>Termos e Condições</p></div>
+                    <div><p>Política de Privacidade</p></div>
+                    <div><p>Jogo Responsável</p></div>
+                    <div><p>Proteção Contra Fraude</p></div>
+                </div>
+                <div>
+                    <div><p>Fórum de Discussão</p></div>
+                    <div><p>Facebook</p></div>
+                    <div><p>Twitter</p></div>
+                    <div><p>Afiliados</p></div>
+                </div>
+            </div>
+            <div class="direitos">© CasiGO. Todos os Direitos Reservados</div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="../../assets/js/dropdown.js"></script>
+</html>

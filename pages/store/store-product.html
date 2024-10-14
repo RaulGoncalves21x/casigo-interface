@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>CasiGO | Sweatshirt Preta</title>
+        <link rel="stylesheet" href="../../assets/css/style.css"/>
+        <link rel="stylesheet" href="style_store-product.css"/>
+        <link rel="icon" href="../../assets/images/logo.png"/>
+
+        <link href="../../assets/icons/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+        <!--Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap" rel="stylesheet"/>
+
+        <!--Open Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="../home/index.html"><img src="../../assets/images/casigo-full-logo.png"/></a>
+            </div>
+            <div class="header-mid">
+                <ul>
+                    <div class="content">
+                        <li><a href="../games/games-gallery.html">Jogos</a></li>
+                    </div>
+                    <div class="content">
+                        <li><a href="../store/store-gallery.html">Merchandising</a></li>
+                    </div>
+                    <div class="content">
+                        <li><a href="../about/about-us.html">Sobre Nós</a></li>
+                    </div>
+            </div>
+            <div class="header-right">
+                <img src="../../assets/images/profile.jpg" alt="profile icon" class="iconImage_navbar" onclick="upload()"></img>
+                <p id="user">John_Doe<br/>42.12€</p>
+            </div>
+        </header>
+
+        <div class="dropdown_container">
+            <div class="dropdown_menu">
+                <div>
+                    <p>John_Doe</p>
+                    <span class="bi bi-cart3" onclick="toggleSeparadorAdd()"><span id="cart-number">0</span></span>
+                </div>
+                <button id="prima" onclick="window.location.href='../profile/profile-page.html'">Perfil</button>
+                <button onclick="window.location.href='../account_movements/movements.html'">Movimentos</button>
+                <button onclick="window.location.href='../home/index.html'">Terminar Sessão</button>
+            </div>
+        </div>
+
+        <div id="opacityPopUp" onclick="esconderSeparador()"></div>
+        <div id="popup-info">
+            <div>
+                <p>Composição e Cuidados</p>
+                <i class="bi bi-x-lg" onclick="esconderSeparador()"></i>
+            </div>
+            <div id="material">
+                <p>Composição</p>
+                <p>100% algodão, 40% poliéster</p>
+            </div>
+            <div id="care">
+                <p id="first">Cuidados</p>
+                <p>Máxima temperatura de lavagem 30ºC</p>
+                <p>Proibido utilizar branqueadores ou lixívia</p>
+                <p>Não secar em secador rotativo</p>
+                <p>Engomar a baixa temperatura</p>
+                <p>Proibido limpeza a seco</p>
+            </div>
+        </div>
+
+        <div id="opacityPopUpSend" onclick="esconderSeparadorSend()"></div>
+        <div id="popup-infoSend">
+            <div>
+                <p>Envio</p>
+                <i class="bi bi-x-lg" onclick="esconderSeparadorSend()"></i>
+            </div>
+            <div id="sendMethod">
+                <div id="sendMethod-info">
+                    <p>Standard <span>( 5 dias úteis )</span></p>
+                    <div>
+                        <p>Entrega em Portugal Continental</p>
+                        <p>Grátis em encomendas superiores a 30€</p>
+                    </div>
+                </div>
+                <div id="sendMethod-price">
+                    <p>1.95€</p>
+                </div>
+            </div>
+            <div id="sendMethod">
+                <div id="sendMethod-info">
+                    <p>Express <span>( 2 dias úteis )</span></p>
+                    <div>
+                        <p>Entrega em Portugal Continental</p>
+                        <p>Grátis em encomendas superiores a 50€</p>
+                    </div>
+                </div>
+                <div id="sendMethod-price">
+                    <p>3.95€</p>
+                </div>
+            </div>
+            <div id="sendMethod">
+                <div id="sendMethod-info">
+                    <p>Ultimate <span>( Dia Seguinte )</span></p>
+                    <div>
+                        <p>Entrega em Portugal Continental</p>
+                        <p>Grátis em encomendas superiores a 60€</p>
+                    </div>
+                </div>
+                <div id="sendMethod-price">
+                    <p>4.95€</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="opacityPopUpAdd" onclick="esconderSeparadorAdd()"></div>
+        <div id="popup-infoAdd">
+            <div>
+                <p>Carrinho de Compras</p>
+                <i class="bi bi-x-lg" onclick="esconderSeparadorAdd()"></i>
+            </div>
+            <div id="insideInfo-container">
+                <div id="img-product">
+                    <img src="../../assets/images/merch/black-hoodie.png">
+                </div>
+                <div id="info-product">
+                    <p>Sweatshirt Preta</p>
+                    <div>
+                        <button></button>
+                        <p>Preto<span>/</span><span id="info-size"></span></p>
+                    </div>
+                    <p>REF. 0092886</p>
+                    <div id="erase-item">
+                        <i id="trash" class="far fa-trash-alt"></i>
+                    </div>
+                    <div id="qty-price">
+                        <div id="qty">
+                            <button id="minus-qty"><i class="bi bi-dash-lg"></i></button>
+                            <p id="qty-p">0</p>
+                            <button id="plus-qty"><i class="bi bi-plus-lg"></i></button>
+                        </div>
+                        <p>20,00 €</p>
+                    </div>
+                </div>
+            </div>
+            <div id="total-finish">
+                <div>
+                    <p>Total</p>
+                    <p><span id="p-total">20</span>,00 €</p>
+                </div>
+                <button>Concluir Compra</button>
+            </div>
+        </div>
+
+        <div class="merchItem-container">
+            <div class="merchImg-container">
+                <img src="../../assets/images/merch/black-hoodie.png"/>
+            </div>
+            <div class="merchInfo-container">
+                <div class="inside-container">
+                    <div>
+                        <p>CASIGO</p>
+                        <p>Sweatshirt Preta</p>
+                        <div style="position: relative;">
+                            <p id="priceBefore">25,00€</p>
+                            <p id="priceNow">20,00€</p>
+                            <div id="promoNatal">
+                                <p>Promoção Natal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="color">
+                        <button class="color-btn btn-active"></button>
+                        <p>Preto</p>
+                    </div>
+                    <div id="sizes">
+                        <button class="sizes-btn" id="XS" onclick="ativarXS()">XS</button>
+                        <button class="sizes-btn" id="S" onclick="ativarS()">S</button>
+                        <button class="sizes-btn" id="M" onclick="ativarM()">M</button>
+                        <button class="sizes-btn" id="L" onclick="ativarL()">L</button>
+                        <button class="sizes-btn" id="XL" onclick="ativarXL()">XL</button>
+                    </div>
+                    <div id="invalid-box">
+                        <p>Por favor, selecione um tamanho para adicionar ao seu carrinho!</p>
+                    </div>
+                    <div id="merch-btn">
+                        <button onclick="incrementar()">Adicionar ao Carrinho</button>
+                    </div>
+                    <div id="product-description">
+                        <p>
+                            Sweatshirt básica com capuz.
+                            Fit boxy, tecido grosso sem perchar. 
+                            <br/>Confeção com algodão orgânico.
+                        </p>
+                        <p>Ref. 0092886</p>
+                    </div>
+                    <div id="composition">
+                        <button onclick="toggleSeparador()">
+                            <div>
+                                <i class="fas fa-tshirt"></i>Composição e Cuidados
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div id="composition">
+                        <button onclick="toggleSeparadorSend()">
+                            <div>
+                                <i class="bi bi-send" id="envio"></i>Envio
+                            </div>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class=footer-container>
+                <div class="left">
+                    <div><p>Termos e Condições</p></div>
+                    <div><p>Política de Privacidade</p></div>
+                    <div><p>Jogo Responsável</p></div>
+                    <div><p>Proteção Contra Fraude</p></div>
+                </div>
+                <div>
+                    <div><p>Fórum de Discussão</p></div>
+                    <div><p>Facebook</p></div>
+                    <div><p>Twitter</p></div>
+                    <div><p>Afiliados</p></div>
+                </div>
+            </div>
+            <div class="direitos">© CasiGO. Todos os Direitos Reservados</div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="scripts_store.js"></script>
+    <script type="text/javascript" src="../../assets/js/dropdown.js"></script>
+</html>

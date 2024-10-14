@@ -1,0 +1,585 @@
+body {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.body_active {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* ----- ENG: Promotion Box ----- */
+/* ----- PT: Caixa Promoção ----- */
+
+#promoNatal {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    background: red;
+    width: 200px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+}
+
+#promoNatal > p {
+    font-size: 11pt;
+}
+
+/* ----- ENG: Product Box ----- */
+/* ----- PT: Caixa Produto ----- */
+
+.merchItem-container {
+    width: 80%;
+    height: 900px;
+    margin: 100px auto;
+    position: relative;
+    display: flex;
+    transform: translateX(30px);
+}
+
+/* ----- ENG: Image Box (Left Side) ----- */
+/* ----- PT: Caixa Imagem (Lado Esquerdo) ----- */
+
+.merchImg-container {
+    width: 60%;
+}
+
+.merchImg-container > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* ----- ENG: Info Box (Right Side) ----- */
+/* ----- PT: Caixa Informação (Lado Direito) ----- */
+
+.merchInfo-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inside-container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* ----- ENG: Name/Price Box ----- */
+/* ----- PT: Caixa Nome/Preço ----- */
+
+.inside-container > div:first-child > p:first-child {
+    font-family: 'Open Sans';
+    letter-spacing: 5px;
+    margin: 0;
+    color: white;
+}
+
+.inside-container > div:first-child > p:not(:first-child, #priceBefore, #priceNow) {
+    font-family: 'Open Sans';
+    letter-spacing: 5px;
+    margin: 5px 0 15px;
+    color: #e6a709;
+}
+
+#priceBefore {
+    color: white;
+    text-decoration: line-through;
+    display: inline;
+    letter-spacing: 2px;
+}
+
+#priceNow {
+    color: red;
+    margin-left: 15px;
+    display: inline;
+    letter-spacing: 2px;
+}
+
+.inside-container > div:first-child > div {
+    margin-bottom: 25px;
+}
+
+.inside-container > div:first-child {
+    border-bottom: 1px solid #e6a709;
+    width: 85%;
+}
+
+/* ----- ENG: Color Box ----- */
+/* ----- PT: Caixa Cor ----- */
+
+#color {
+    width: 85%;
+    display: flex;
+    margin: 25px 0;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.color-btn {
+    width: 20px;
+    height: 100%;
+    background-color: black;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.color-btn:not(.btn-active):hover {
+    border: 1px solid darkgray;
+    color: darkgray;
+}
+
+#color > p {
+    margin: 0;
+    display: inline;
+    color: gray;
+    font-size: 10pt;
+}
+
+/* ----- ENG: Size Box ----- */
+/* ----- PT: Caixa Tamanhos ----- */
+
+#sizes {
+    display: flex;
+    width: 85%;
+    height: 40px;
+    margin: 25px 0;
+}
+
+.sizes-btn {
+    width: 60px;
+    height: 100%;
+    margin-right: 15px;
+    background: transparent;
+    border: 1px solid lightgray;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.sizes-btn:not(.btn-active):hover {
+    border: 1px solid darkgray;
+    color: darkgray;
+}
+
+.btn-active {
+    border: 1px solid #e6a709;
+    color: #e6a709;
+}
+
+/* ----- ENG: Invalid Box ----- */
+/* ----- PT: Caixa Inválida ----- */
+
+#invalid-box {
+    width: 85%;
+    background: rgb(255, 37, 37);
+    padding: 5px 10px;
+    display: none;
+}
+
+#invalid-box > p {
+    text-align: center;
+    color: white;
+    font-size: 11pt;
+}
+
+/* ----- ENG: Shopping Cart Button ----- */ 
+/* ----- PT: Botão Carrinho Compras ----- */
+/*
+#merch-btn {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+#merch-btn {
+    width: 85%;
+    border-bottom: 1px solid #e6a709;
+}
+
+#merch-btn > button {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0 30px;
+    background: rgb(46, 46, 46);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+#merch-btn > button:hover {
+    background: rgb(37, 37, 37);
+}
+
+/* ----- ENG: Description Box ----- */
+/* ----- PT: Caixa Descrição ----- */
+
+#product-description {
+    width: 85%;
+    border-bottom: 1px solid #e6a709;
+}
+
+#product-description > p:first-child {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    color: white;
+    margin: 25px 0 10px;
+    letter-spacing: 1.3px;
+}
+
+#product-description > p:last-child {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+    color: darkgray;
+    margin: 0 0 20px;
+}
+
+/* ----- ENG: Composition Box ----- */
+/* ----- PT: Caixa Composição ----- */
+
+#composition {
+    width: 85%;
+    border-bottom: 1px solid #e6a709;
+}
+
+#composition > button {
+    width: 100%;
+    height: 100%;
+    margin: 25px 0;
+    background: none;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#composition > button > div,
+#composition > button > i,
+#composition > button > div > i {
+    font-size: 12pt;
+}
+
+#composition > button:hover {
+    color: rgb(184, 184, 184);
+}
+
+#composition > button > div > i:not(#envio) {
+    margin-right: 15px;
+}
+
+#envio {
+    margin-right: 19px;
+}
+
+/* ----- ENG: Pop-up Boxes ----- */
+/* ----- PT: Caixas Pop-up ----- */
+
+#opacityPopUp, 
+#opacityPopUpSend,
+#opacityPopUpAdd {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    z-index: 90;
+    opacity: 0.7;
+}
+
+.opacity_active {
+    right: 0;
+}
+
+#popup-info,
+#popup-infoSend,
+#popup-infoAdd {
+    width: 500px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+    transform: translateX(500px);
+    transition: 0.5s;
+}
+
+#popup-info > div:first-child,
+#popup-infoSend > div:first-child,
+#popup-infoAdd > div:first-child {
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#popup-info > div:first-child > p,
+#popup-infoSend > div:first-child > p,
+#popup-infoAdd > div:first-child > p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+    display: inline;
+    width: 100%;
+}
+
+#popup-info > div:first-child > i ,
+#popup-infoSend > div:first-child > i,
+#popup-infoAdd > div:first-child > i {
+    position: absolute;
+    right: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ----- ENG/PT: Material ----- */
+
+#material {
+    width: 85%;
+    margin: 30px auto 0;
+    border-bottom: 1px solid lightgray;
+}
+
+#material > p:first-child {
+    font-weight: 600;
+    font-size: 11pt;
+    letter-spacing: 1.5px;
+}
+
+#material > p:last-child {
+    font-size: 10pt;
+    color: gray;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#care {
+    width: 85%;
+    margin: 15px auto;
+}
+
+#care > #first {
+    font-weight: 600;
+    font-size: 11pt;
+    letter-spacing: 1.5px;
+}
+
+#care > p:not(#first) {
+    font-size: 10pt;
+    color: gray;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* ----- ENG: Send ----- */
+/* ----- PT: Envio ----- */
+
+#sendMethod {
+    display: flex;
+    width: 85%;
+    margin: 30px auto 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid lightgray;
+}
+
+#sendMethod-info > p {
+    font-size: 12pt;
+    font-weight: 600;
+    margin: 0 0 25px;
+}
+
+#sendMethod-info > p > span {
+    font-size: 12pt;
+    font-weight: 600;
+    margin: 0 7px;
+}
+
+#sendMethod-info > div > p {
+    color: gray;
+    font-weight: 300;
+    margin: 0;
+    font-size: 10pt;
+    margin-top: 5px;
+}
+
+#sendMethod-info > div > p:last-child {
+    color: #e6a709;
+}
+
+/* ----- ENG: Shopping Cart ----- */
+/* ----- PT: Carrinho de Compras ----- */
+
+#insideInfo-container {
+    box-sizing: content-box;
+    display: flex;
+    width: 85%;
+    height: 130px;
+    margin: 30px auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+#img-product {
+    width: 30%;
+    height: 100%;
+}
+
+#img-product > img {
+    width: 100%;
+    height: 100%;
+}
+
+#info-product {
+    margin-left: 15px;
+    width: 70%;
+    position: relative;
+}
+
+#info-product > p:first-child {
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+    color: #e6a709;
+    font-size: 11pt;
+    margin: 0;
+    font-weight: 600;
+}
+
+#info-product > div:first-of-type {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#info-product > div > button {
+    background: black;
+    width: 15px;
+    height: 15px;
+    border: none;
+    display: inline;
+}
+
+#info-product > div:first-of-type > p {
+    display: inline;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 10pt;
+    color: gray;
+}
+
+#info-product > div:first-of-type > p > span {
+    display: inline;
+    margin: 0;
+    margin-left: 7px;
+    font-size: 10pt;
+    color: gray;
+}
+
+#info-product > p:last-of-type {
+    letter-spacing: 1px;
+    color: darkgray;
+    font-size: 10pt;
+    margin: 10px 0 0;
+}
+
+#erase-item {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#erase-item > i {
+    cursor: pointer;
+}
+
+#qty-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#qty {
+    display: flex;
+}
+
+#qty > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#qty > p {
+    margin: 0;
+}
+
+#qty-price > p {
+    font-size: 12pt;
+    margin: 0;
+    font-weight: 600;
+}
+
+#total-finish {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid lightgray;
+}
+
+#total-finish > div {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#total-finish > div > p {
+    display: inline;
+    color: rgb(46, 46, 46);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#total-finish > div > p > span {
+    display: inline;
+    color: rgb(46, 46, 46);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+
+#total-finish > button {
+    width: 85%;
+    height: 50px;
+    margin: 20px 0 15px;
+    background: rgb(46, 46, 46);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+#total-finish > button:hover {
+    background: rgb(37, 37, 37);
+}
+

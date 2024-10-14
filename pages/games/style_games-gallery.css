@@ -1,0 +1,319 @@
+/* ----- ENG: Games Exhibitor ----- */
+/* ----- PT: Expositor de Jogos ----- */
+.main {
+  width: 50%;
+  margin: 0 auto;
+}
+.tr-zoom {
+  transition: transform 0.5s;
+}
+.tr-zoom:hover {
+  transform: scale(1.05);
+}
+
+.espaco {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* --------- IMAGE BOX CSS importado de style_index.css --------- */
+
+.img-box {
+  display: flex;
+  position: relative;
+  width: 70%;
+  height: 650px;
+  margin: 60px auto 0;
+  border-radius: 10px;
+
+  box-shadow: 0 0 25px 1px black;
+}
+
+.img-box > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+  position: absolute;
+}
+
+.img-box > p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 7pt;
+  position: absolute;
+  bottom: 7px;
+  margin: 0;
+  left: 10px;
+  /*transform: translateX(-50%);
+    left: 50%*/
+}
+
+.bonus-info {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  margin-left: 75px;
+  color: white;
+}
+
+.bonus-info > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 38pt;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.bonus {
+  letter-spacing: 2.8px;
+  text-shadow: 0 0 20px white;
+  margin: 0 0 20px;
+}
+
+.bonus > sup {
+  font-size: 16pt;
+  margin-left: 4px;
+}
+
+.bonus-intro {
+  color: #e6a709;
+  letter-spacing: 5px;
+  text-shadow: 0 0 20px #e6a709;
+  margin: 0 0 6px;
+}
+
+.inner-img {
+  position: absolute;
+  right: 8%;
+  bottom: 7%;
+}
+.inner-img > img {
+  border-radius: 15px;
+  color: white;
+  height: 250px;
+  width: 250px;
+  transition: 0.25s;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.inner-img > img:hover {
+  box-shadow: 0 0 2em 0.25em hsl(43, 92%, 47%);
+  transform: scale(1.05);
+}
+
+.btn-bonus > button {
+  /*color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 2px solid #e6a909;
+    background: #e6a909;
+    padding: 8px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #e6a909;*/
+
+  position: relative;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 500;
+
+  color: hsl(43, 92%, 47%);
+  border: hsl(43, 92%, 47%) 0.125em solid;
+  padding: 8px 30px;
+  border-radius: 10px;
+  background: none;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 hsl(43, 92%, 50%), 0 0 0.5em 0 hsl(43, 92%, 50%);
+
+  transition: 0.25s;
+}
+
+.btn-bonus > button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.25em hsl(43, 92%, 47%);
+  opacity: 0;
+
+  transition: 0.25s;
+}
+
+.btn-bonus > button:hover {
+  background-color: hsl(43, 92%, 47%);
+  color: white;
+  text-shadow: none;
+}
+
+.btn-bonus > button:hover::after {
+  opacity: 1;
+}
+
+.btn-bonus {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/* --------- IMAGE BOX CSS --------- */
+
+.hstyle {
+  border: 2px solid #e6b909;
+  border-radius: 2px;
+}
+
+.logo {
+  width: 95%;
+  height: 95%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0 auto;
+
+  border-radius: 20px;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 35pt;
+  font-weight: 550;
+
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.descricao {
+  font-size: 18pt;
+  color: white;
+  text-align: justify;
+  text-transform: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*BOTAO*/
+.btn1 {
+  width: 100px;
+  height: 55px;
+  margin-top: 5px;
+
+  font-size: 15pt;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+
+  cursor: pointer;
+
+  border: 0px;
+  border-radius: 10px;
+
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn1:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn1.bc1 {
+  background-image: linear-gradient(
+    to right,
+    #df0001,
+    #e65555,
+    #df0001,
+    #e14e43
+  );
+  box-shadow: 0 2px 20px rgba(230, 85, 85, 0.2);
+}
+
+.btn1.bc2 {
+  background-image: linear-gradient(
+    to right,
+    #00e4ff,
+    #bc43e1,
+    #00e4ff,
+    #5555e6
+  );
+  box-shadow: 0 2px 20px rgba(0, 228, 255, 0.2);
+}
+
+.btn1.bc3 {
+  background-image: linear-gradient(
+    to right,
+    #999999,
+    #000000,
+    #dddddd,
+    #000000
+  );
+  box-shadow: 0 2px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn1.bc4 {
+  background-image: linear-gradient(
+    to right,
+    #fe3e01,
+    #252d30,
+    #fe3e01,
+    #303d43
+  );
+  box-shadow: 0 2px 20px rgba(254, 62, 1, 0.2);
+}
+
+.mais-jogados {
+  background-image: url(../../assets/images/games/banner_placeholder.jpg);
+}
+
+.novidades {
+  background-image: url(../../assets/images/games/banner_placeholder.jpg);
+}
+
+.img {
+  width: 70%;
+  height: 350px;
+  margin: 60px auto 60px;
+
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #e6a909;
+
+  background-repeat: 0;
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: 0 0 25px 1px black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    width: 70%;
+  }
+  .titulo {
+    font-size: 16pt;
+  }
+  .descricao {
+    font-size: 10pt;
+  }
+  .btn1 {
+    width: 50px;
+    height: 25px;
+    margin-top: 5px;
+    font-size: 7pt;
+  }
+  .img {
+    width: 70%;
+  }
+}

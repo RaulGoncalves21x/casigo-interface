@@ -1,0 +1,171 @@
+.conta_container {
+    width: 500px;
+    margin: 120px auto;
+    display: flex;
+    border-radius: 10px;
+    background: #1e2430;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    flex-direction: column;
+    position: relative;
+}
+
+.conta_container > div {
+    width: 100%;
+}
+
+.conta_container > div:first-child {
+    height: 54px;
+    display: flex;
+    justify-content: center;
+}
+
+.conta_container > div:first-child > img {
+    width: 100px;
+    height: 100px;
+    transform: translateY(-50px);
+}
+
+.conta_container > div:last-child {
+    height: 90%;
+    margin-top: 30px;
+    justify-content: center;
+    position: relative;
+}
+
+.conta_container > div:last-child > * {
+    width: 100%;
+    text-align: center;
+}
+
+.conta_container > div:last-child > form > label {
+    width: 100%;
+    color: white;
+}
+
+.conta_container > div:last-child > form > input,
+.conta_container > div:last-child > form > div > input{
+    width: 70%;
+    margin: 20px 0 0 0;
+    background: none;
+    border: none;
+    border-bottom: white solid 2px;
+    color: white;
+    text-transform: none;
+    padding: 10px;
+}
+
+.conta_container > div:last-child > form > input:focus,
+.conta_container > div:last-child > form > div > input:focus {
+    outline: none;
+}
+
+.conta_container > div:last-child > form > p {
+    margin-top: 25px;
+    color: #fff;
+}
+
+.conta_container > div:last-child > form > p label {
+    text-transform: none;
+}
+
+.conta_container > div:last-child > form > button {
+    width: 70%;
+    border: 2px rgb(230, 167, 9) solid;
+    background: none;
+    color: rgb(230, 167, 9);
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.conta_container > div:last-child > form > button:hover {
+    background: rgba(230, 167, 9, 1);
+    color: white;
+}
+
+.conta_container > div > hr {
+    height: 2px;
+    width: 90%!important;
+    margin: 40px auto;
+    border-color: rgb(230, 167, 9);
+    box-shadow: 0 0 5px rgb(230, 167, 9);
+}
+
+.conta_container .link-text {
+    margin: 20px 0;
+}
+
+.conta_container .link-text a {
+    text-transform: none;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.link-text > a:hover {
+    text-shadow: 0 0 7px white;
+}
+
+#caixa-botaoRegistar,
+#caixa-botaoLogin {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 40px 0;
+    color: #fff;
+    text-transform: none;
+}
+
+#caixa-botaoRegistar p,
+#caixa-botaoLogin p {
+    font-size: 14px;
+    margin: 0;
+}
+
+#caixa-botaoRegistar a,
+#caixa-botaoLogin a {
+    font-size: 14px;
+    margin-left: 5px;
+    border-bottom: 1px solid white;
+}
+
+.conta_container > div:last-child > div > button {
+    width: 40%;
+    border: none;
+    background: rgb(230, 167, 9);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.conta_container > div:last-child > div > button:hover {
+    box-shadow: 0 0 10px rgba(230, 167, 9, 1);
+}
+
+.conta_container > div:last-child > form > div {
+    position: relative;
+    height: fit-content;
+}
+
+#registar {
+    display: none;
+}
+
+#olho,
+#olho2,
+#olho3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateY(10px);
+    right: 70px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    color: white;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>CasiGO | Página Perfil</title>
+        <link rel="stylesheet" href="style_profile.css">
+        <link rel="stylesheet" href="../../assets/css/style.css"/>
+        <link rel="icon" href="../../assets/images/logo.png"/>
+
+        <!--Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap" rel="stylesheet"/>
+
+        <!--Open Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        <link href="../../assets/icons/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="../home/index.html"><img src="../../assets/images/casigo-full-logo.png"/></a>
+            </div>
+            <div class="header-mid">
+                <ul>
+                    <div class="content">
+                        <li><a href="../games/games-gallery.html">Jogos</a></li>
+                    </div>
+                    <div class="content">
+                        <li><a href="../store/store-gallery.html">Merchandising</a></li>
+                    </div>
+                    <div class="content">
+                        <li><a href="../about/about-us.html">Sobre Nós</a></li>
+                    </div>
+            </div>
+            <div class="header-right">
+                <img src="../../assets/images/profile.jpg" alt="profile icon" class="iconImage_navbar" onclick="upload()"></img>
+                <p id="user">John_Doe<br/>42.12€</p>
+            </div>
+        </header>
+
+        <div class="dropdown_container">
+            <div class="dropdown_menu">
+                <div>
+                    <p>John_Doe</p>
+                    <span class="bi bi-cart3"><span>0</span></span>
+                </div>
+                <button id="prima" onclick="window.location.href='profile-page.html'">Perfil</button>
+                <button onclick="window.location.href='../account_movements/movements.html'">Movimentos</button>
+                <button onclick="window.location.href='../home/index.html'">Terminar Sessão</button>
+            </div>
+        </div>
+
+        <div id="opacityPopUp" onclick="esconderSeparador()"></div>
+        <div id="verifyId">
+            <p>Verificação de Identidade</p>
+            <div>
+                <input onchange="checkPass()" id="passVer" type="password" placeholder="Password">
+                <i id="correct" class="fas fa-check-circle"></i>
+                <i id="incorrect" class="fas fa-times-circle"></i>
+            </div>
+        </div>
+
+        <div class="messageInfo_profile">
+            <em class="main_message">Perfil</em>
+        </div>
+
+        <div class="container">
+            <div class="profile_icon">
+                <div class="div_imagemIcon">
+                    <img src="../../assets/images/profile.jpg" alt="profile icon image" class="iconImage">
+                    <div id="hovering">
+                        <i type="file" class="bi bi-pencil-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="inside">
+                <div class="left_container">
+                    <div class=box >
+                        <p class="tag">Nome Utilizador</p>
+                        <p class="info_profile">John_Doe</p>
+                    </div>
+                    <div class=box>
+                        <p class="tag">Nome Completo</p>
+                        <p class="info_profile">Dwayne Douglas Johnson</p>
+                    </div>
+                    <div class=box>
+                        <p class="tag">Data de Nascimento</p>
+                        <p class="info_profile">02/04/1972</p>
+                    </div>
+                </div>
+                <div>
+                    <div class=box >  
+                        <p class="tag">E-mail</p>
+                        <p class="info_profile">dwayne_rock0456@example.com</p>
+                    </div>                   
+                    <div class=box>
+                        <p class="tag">Método Pagamento</p>
+                        <p class="info_profile">Cartão de Crédito</p>
+                    </div>
+                    <div class=box>
+                        <p class="tag">Conta Premium</p>
+                        <p class="info_profile">Não</p>
+                        <button onclick="window.location.href='../premium_account_details/premium-details.html'">Aderir</button>
+                    </div>
+ 
+                </div>
+            </div>
+            <div class="botaoInfo_div">
+                <button onclick="toggleSeparador()">Editar Perfil</button>
+            </div>
+        </div>
+
+        <button class="circle-button" onclick="ativar()"><i class="fas fa-chevron-circle-down circle-button-img"></i></button>
+
+        <div class="hide">
+            <div style="height: 350px;" class="container resize">
+                <div style="height: 10%;">
+                </div>
+                <div style="height: 300px;" class="inside">
+                    <div class="left_container">
+                        <div class=box >
+                            <p class="tag">Qnt. depositada</p>
+                            <p class="info_profile">532.53€</p>
+                        </div>
+                        <div class=box>
+                            <p class="tag">Qnt. apostada</p>
+                            <p class="info_profile">412.21€</p>
+                        </div>
+                        <div class=box>
+                            <p class="tag">Apostas Perdidas</p>
+                            <p class="info_profile">43.2%</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=box >  
+                            <p class="tag">Qnt. levantada</p>
+                            <p class="info_profile">235.00€</p>
+                        </div>
+                        <div class=box>
+                            <p class="tag">Qnt. Ganha</p>
+                            <p class="info_profile">856.94€</p>
+                        </div>
+                        <div class=box >
+                            <p class="tag">Jogo Mais Jogado</p>
+                            <p class="info_profile">JACKHAMMER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height: auto;" class="container resize">
+
+                <div style="padding-top: 20px;" class="inside">
+                    <div>
+                        <div class=box2>
+                            <div class="progress_container">
+                                <p>457/867xp</p>
+                                <div class="progress-bar"></div>
+                                <div class="DivUpdate_ProgBar">
+                                    <p>Nivel 34</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=box2>
+                            <figure>
+                                <img class="gauge" src="../../assets/images/gauge.png">
+                                <figcaption class="descricao">Apostas Ganhas</figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class=footer-container>
+                <div class="left">
+                    <div><p>Termos e Condições</p></div>
+                    <div><p>Política de Privacidade</p></div>
+                    <div><p>Jogo Responsável</p></div>
+                    <div><p>Proteção Contra Fraude</p></div>
+                </div>
+                <div>
+                    <div><p>Fórum de Discussão</p></div>
+                    <div><p>Facebook</p></div>
+                    <div><p>Twitter</p></div>
+                    <div><p>Afiliados</p></div>
+                </div>
+            </div>
+            <div class="direitos">© CasiGO. Todos os Direitos Reservados</div>
+        </footer>
+    </body>
+    <!--JavaScrip files-->
+    <script type="text/javascript" src="scripts_profile.js"></script>
+    <script type="text/javascript" src="../../assets/js/dropdown.js"></script>
+</html>

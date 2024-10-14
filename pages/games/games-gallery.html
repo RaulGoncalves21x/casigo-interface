@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>CasiGO | Jogos</title>
+        <link rel="stylesheet" href="../../assets/css/style.css"/>
+        <link rel="stylesheet" href="style_games-gallery.css"/>
+
+        <link href="../../assets/icons/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+        <!--Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap" rel="stylesheet"/>
+
+        <!--Open Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="../../assets/images/logo.png"/>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="../home/index.html"><img src="../../assets/images/casigo-full-logo.png"/></a>
+            </div>
+            <div class="header-mid">
+                <ul>
+                    <div class="content">
+                        <li class="active"><a href="games-gallery.html">Jogos</a></li>
+                    </div>
+                    <div class="content">
+                        <li><a href="../store/store-gallery.html">Merchandising</a></li>
+                    </div>
+                    <div class="content">
+                        <li><a href="../about/about-us.html">Sobre Nós</a></li>
+                    </div>
+            </div>
+            <div class="header-right">
+                <img src="../../assets/images/profile.jpg" alt="profile icon" class="iconImage_navbar" onclick="upload()"></img>
+                <p id="user">John_Doe<br/>42.12€</p>
+            </div>
+        </header>
+
+        <div class="dropdown_container">
+            <div class="dropdown_menu">
+                <div>
+                    <p>John_Doe</p>
+                    <span class="bi bi-cart3"><span>0</span></span>
+                </div>
+                <button id="prima" onclick="window.location.href='../profile/profile-page.html'">Perfil</button>
+                <button onclick="window.location.href='../account_movements/movements.html'">Movimentos</button>
+                <button onclick="window.location.href='../home/index.html'">Terminar Sessão</button>
+            </div>
+        </div>
+
+        <!--<div class="img-box">
+            <img src="../../assets/images/banner_jogos1.jpg"/>
+            <div class="bonus-info">
+                <p class="bonus-intro">Experimente:<br/>Top Semanal</p>
+                <p class="bonus" style="color: #DF0001; text-shadow: 0 0 20px red;">Sloterino</p>
+            </div>
+            <div class="inner-img">
+                <img src="../../assets/images/games/logo_slots.jpg"></img>
+            </div>
+        </div>
+
+        
+        <br/>
+        <br/>
+        <hr width="70%" class="hstyle">-->
+
+        <div class="messageInfo_profile">
+            <em class="main_message">Jogos</em>
+        </div>
+
+        <div class="main">
+
+            <!---------------------------------ITEM 1------------------------------------>
+            <hr width="90%" class="hstyle">
+            <table width="100%" class="espaco">
+                <tbody>
+                    <tr class="tr-zoom">
+                        <td width="25%">
+                            <img class="logo" src="../../assets/images/games/logo_slots.jpg">
+                        </td>
+                        <td width="75%">
+                            <p class="titulo" style="color: #DF0001;">Sloterino</p>
+                            <p class="descricao">Testa a tua sorte no nosso jogo de Slot Machines, Sloterino! Serás aquele que mal recupera o dinheiro ou aquele que finalmente saca o Jackpot? Só tens uma forma de descobrir...</p>
+                            <div class="container-btn">
+                                <button class="btn1 bc1" onclick="window.location.href='game-ui.html'">Jogar</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr width="90%" class="hstyle">
+
+            <!---------------------------------ITEM 2------------------------------------>
+            <table width="100%" class="espaco">
+                <tbody>
+                    <tr class="tr-zoom">
+                        <td width="25%">
+                            <img class="logo" src="../../assets/images/games/logo_dices.jpg">
+                        </td>
+                        <td width="75%">
+                            <p class="titulo" style="color: #00e4ff;">Dicer</p>
+                            <p class="descricao">O mais antigo e simples jogo: Dados. Vais jogar pelo seguro e apostar acima e abaixo de três? Ou vais ser ousado e apostar em números singulares?</p>
+                            <div class="container-btn">
+                                <button class="btn1 bc2">Jogar</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr width="90%" class="hstyle">
+
+            <!---------------------------------ITEM 3------------------------------------>
+            <table width="100%" class="espaco">
+                <tbody>
+                    <tr class="tr-zoom">
+                        <td width="25%">
+                            <img class="logo" src="../../assets/images/games/logo_blackjack.jpg">
+                        </td>
+                        <td width="75%">
+                            <p class="titulo" style="color: #FFFFFF;">JackHammer</p>
+                            <p class="descricao">Um jogo com classe... Para os mais requintados, mas detendo o mesmo risco. Sobe para assegurar a vitória, mas tem cuidado para não passares os vinte e um!</p>
+                            <div class="container-btn">
+                                <button class="btn1 bc3">Jogar</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr width="90%" class="hstyle">
+
+            <!---------------------------------ITEM 4------------------------------------>
+            <table width="100%" class="espaco">
+                <tbody>
+                    <tr class="tr-zoom">
+                        <td width="25%">
+                            <img class="logo" src="../../assets/images/games/logo_roulette.png">
+                        </td>
+                        <td width="75%">
+                            <p class="titulo" style="color: #fe3e01;">On a Roll</p>
+                            <p class="descricao">A Roleta... Clássico e simples. Todos sabem como ela funciona. Vermelho e Preto para os mortais, Verde para os Deuses. Só tu podes decidir qual deles és.</p>
+                            <div class="container-btn">
+                                <button class="btn1 bc4">Jogar</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr width="90%" class="hstyle">
+
+            <!---------------------------------ITEM 5------------------------------------>
+            <table width="100%" class="espaco">
+                <tbody>
+                    <tr class="tr-zoom">
+                        <td width="25%">
+                            <img class="logo" style="border: 10px solid #e6a909" src="../../assets/images/games/int.png">
+                        </td>
+                        <td width="75%">
+                            <p class="titulo" style="color: #e6a909">Brevemente</p>
+                            <p class="descricao">Teremos mais jogos disponíveis brevemente. Mantém-te a par!</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <div class=footer-container>
+                <div class="left">
+                    <div><p>Termos e Condições</p></div>
+                    <div><p>Política de Privacidade</p></div>
+                    <div><p>Jogo Responsável</p></div>
+                    <div><p>Proteção Contra Fraude</p></div>
+                </div>
+                <div>
+                    <div><p>Fórum de Discussão</p></div>
+                    <div><p>Facebook</p></div>
+                    <div><p>Twitter</p></div>
+                    <div><p>Afiliados</p></div>
+                </div>
+            </div>
+            <div class="direitos">© CasiGO. Todos os Direitos Reservados</div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="../../assets/js/dropdown.js"></script>
+</html>

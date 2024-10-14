@@ -1,0 +1,507 @@
+/* ----- ENG: Box ----- */
+/* ----- PT: Caixa ----- */
+
+.mov-box {
+    display: flex;
+    position: relative;
+    margin: 100px auto;
+    width: 70%;
+    height: 750px;
+    background-color: #1e2430;
+    border-radius: 10px;
+    box-shadow: 0 0.1px 10px black;
+    overflow: hidden;
+}
+
+/* ----- ENG: Button Box (Left Side) ----- */
+/* ----- PT: Caixa Butões (Lado Esquerdo) ----- */
+
+.btn-box {
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid #e6b709;
+    margin: auto 0;
+}
+
+.btn-box > button {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    border: none;
+    padding: 0;
+    align-items: center;
+}
+
+.dep,
+.lev,
+.trans {
+    color: #e6a709;
+    background: none;
+    transition: 0.5s;
+}
+
+.btn-box > button > p {
+    display: inline-block;
+    font-size: 16pt;
+    cursor: pointer;
+    margin: 0;
+}
+
+.btn-box > button > p:hover i {
+    text-shadow: 0 0 10px #e6a709;
+}
+
+.btn-box > button > p:hover {
+    text-shadow: 0 0 10px #e6a709;
+}
+
+.btn-box > button > p > i {
+    font-size: 18pt;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.btn-active {
+    background-color: #e6b709;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+
+/* ----- ENG: Information Box (Right Side) ----- */
+/* ----- PT: Caixa Informação (Lado Direito) ----- */
+
+.dep-box,
+.lev-box,
+.trans-box {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    right: 0;
+    display: none;
+    transition: 1s;
+}
+
+.dep-box {
+    display: flex;
+}
+
+/* ----- ENG: Deposit/Withdraw Box ----- */
+/* ----- PT: Caixa Depósito/Levantamento ----- */
+
+/* ----- ENG: Method Box ----- */
+/* ----- PT: Caixa Métodos ----- */
+
+.pay-box {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.textMet-box {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#tmb1 {
+    margin-bottom: 20px;
+}
+
+.textMet-box > p {
+    font-size: 18pt;
+    margin: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.met-box {
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.met-box > p {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+    margin: 0 3px 5px 10px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: #b5b5b5;
+    font-size: 16pt;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.met-box > p > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(341deg);
+    width: 150%;
+    background: #e6a709;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #000;
+}
+
+.met-box > p:first-child {
+    background: #e6a709;
+    color: white;
+}
+
+.met-box > p:last-child {
+    margin-bottom: 0;
+}
+
+.met-box > p > i {
+    width: 25%;
+    font-size: 32pt;
+    text-align: center;
+}
+
+.secureText {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.secureText > p {
+    color: #e6a709;
+    margin: 0;
+    font-size: 10pt;
+}
+
+#sp {
+    text-transform: none;
+    font-size: 12pt;
+    margin-top: 5px;
+    font-style: oblique;
+    color: white;
+}
+
+.secureText > p > i {
+    margin-right: 5px;
+}
+/* ----- ENG: Form Box ----- */
+/* ----- PT: Caixa Formulário ----- */
+
+.form-box {
+    width: 60%;
+    height: 100%;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto 40px;
+}
+
+input,
+form > div  select {
+    padding: 10px 5px 5px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    text-transform: none;
+    text-align: center;
+    color: #e6a709;
+    transition: 0.25s;
+}
+
+form > div select {
+    color: gray;
+}
+
+form > div select:focus {
+    border-bottom: 1px solid #e6a709;
+}
+
+.correctSelect {
+    color: #e6a909;
+}
+
+form > div > select option {
+    color: black;
+}
+
+
+input::placeholder {
+    color: gray;
+}
+
+input:focus {
+    border-bottom: 1px solid #e6a709;
+}
+
+input:not(#val1, #val2, #cvv, #cardNumb) {
+    width: 100%;
+}
+
+.val-box {
+    display: flex;
+}
+
+#val1,
+#val3 {
+    width: 48%;
+    margin-right: 4%;
+}
+
+#val2,
+#val4 {
+    width: 48%;
+}
+
+.card-box {
+    display: flex;
+}
+
+#cardNumb {
+    width: 70%;
+    margin-right: 3%;
+}
+
+#cvv {
+    width: 27%;
+}
+
+/* ----- ENG: Amount Box ----- */
+/* ----- PT: Caixa Quantidade ----- */
+
+.amount-box {
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+    color: white;
+}
+
+.amount-container {
+    margin-top: 40px;
+}
+
+.amount-container > div {
+    width: 100%;
+    height: 50%;
+}
+
+.btnAmount {
+    padding: 10px 0;
+    width: 30%;
+    border-radius: 5px;
+    border: 2px solid #e6a709;
+    background: #1e2430;
+    color: #e6a709;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.amount-box-active {
+    background-color: #e6a909;
+    color: white;
+}
+
+.amount-container > div > button:not(:last-child) {
+    margin-right: 5px;
+}
+
+#amount1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#depAmount,
+#levAmount {
+    margin-top: 40px;
+}
+
+#depAmount-box {
+    position: relative;
+}
+
+#depAmount-box > p {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    right: 40px;
+    font-size: 14pt;
+}
+
+#depBtn {
+    margin-top: 60px;
+    padding: 12px 32px;
+    color: white;
+    background: #e6a909;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#depBtn:hover {
+    background: #e6a709;
+    box-shadow: 0 0 10px #e6a709;
+}
+
+/* ----- ENG: Transactions Box ----- */
+/* ----- PT: Caixa Transações ----- */
+
+.trans-box {
+    flex-direction: column;
+}
+
+.trans-box > .textMet-box > p {
+    border-bottom: 1px solid #e6a709;
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+.trans-box > .textMet-box {
+    margin-top: 25px;
+}
+
+
+.trans-filters {
+    width: 80%;
+    height: 40%;
+    margin: 5px auto;
+    border-bottom: 1px solid #e6a709;
+}
+
+.trans-filters > div {
+    position: relative;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trans-filters > div > p {
+    display: inline-block;
+    width: 50%;
+    color: white;
+    margin: 0;
+    margin-left: 10px;
+    top: 0;
+}
+
+.trans-filters > div > select,
+.trans-filters > div > button {
+    margin-right: 10px;
+    text-align: center;
+    width: 40%;
+    outline: none;
+    background-color: #e6a709;
+    padding: 20px 0;
+    border: none;
+    font-size: 12pt;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trans-filters > div > select option {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#apply {
+    justify-content: center;
+    align-items: center;
+}
+
+#apply > button {
+    color: white;
+    transition: 0.5s;
+}
+
+#apply > button:hover {
+    background: #e6a709;
+    box-shadow: 0 0 10px #e6a709;
+}
+
+.transactions {
+    width: 80%;
+    height: 50%;
+    margin: -5px auto;
+    position: relative;
+}
+
+.transactions > table {
+    width: 95%;
+    height: 40px;
+    border-collapse: collapse;
+    margin: 0 auto 2px;
+}
+
+.transactions > table > tbody > tr th {
+    width: 33.333%;
+    height: 100%;
+    margin: 0;
+    border-bottom: 1px solid #e6a709;
+    color: #e6a709;
+}
+
+.transactions > table > tbody > tr th {
+    border-right: 1px solid #e6a709;
+    border-left: 1px solid #e6a709;
+}
+
+.transactions > div {
+    width: 95%;
+    height: 300px;
+    overflow-y: scroll;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+}
+
+.transactions > div:not(#trans-tudo) {
+    display: none;
+}
+
+#trans-tudo {
+    display: flex;
+}
+
+.transactions > div > div {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid white;
+}
+
+.transactions > div:not(#trans-vazio) > div  p {
+    display: inline-flex;
+    width: 33.333%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#trans-vazio > div > p {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

@@ -1,0 +1,123 @@
+.content-merch {
+	margin-top: 100px;
+	margin-bottom: 140px;
+}
+
+.line {
+	width: 90%;
+	margin: 40px auto;
+	display: flex;
+}
+
+.caixa {
+	width: 50%;
+	height: 450px;
+	align-items: center;
+	justify-content: center;
+	display: inline-flex;
+	margin: 0 auto;
+	position: relative;
+	transition: 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+.imagem-crop {
+	width: 96%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden; 
+	/*border-radius: 50px;*/
+	object-fit: cover;
+	border-radius: 10px;
+	opacity: 0.9;
+	transition: 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+.line2 {
+	width: 55%;
+	margin: 40px auto;
+	display: flex;
+}
+
+.hoverDisplay {
+	width: 70%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+#d1:hover > img,
+#d2:hover > img,
+#d3:hover > img,
+#d4:hover > img,
+#d5:hover > img,
+#d6:hover > img,
+#d7:hover > img,
+#d8:hover > img {
+    opacity: 0.2;
+	transform: scale(1.05);
+}
+  
+#d1:hover > .hoverDisplay,
+#d2:hover > .hoverDisplay,
+#d3:hover > .hoverDisplay,
+#d4:hover > .hoverDisplay,
+#d5:hover > .hoverDisplay,
+#d6:hover > .hoverDisplay,
+#d7:hover > .hoverDisplay,
+#d8:hover > .hoverDisplay {
+    opacity: 1;
+}
+
+#d1:hover .nome-merch,
+#d2:hover .nome-merch,
+#d3:hover .nome-merch,
+#d4:hover .nome-merch,
+#d5:hover .nome-merch,
+#d6:hover .nome-merch,
+#d7:hover .nome-merch,
+#d8:hover .nome-merch {
+	transform: translateY(-160px) scale(1.05);
+}
+
+#d1:hover .innerText,
+#d2:hover .innerText,
+#d3:hover .innerText,
+#d4:hover .innerText,
+#d5:hover .innerText,
+#d6:hover .innerText,
+#d7:hover .innerText,
+#d8:hover .innerText {
+	transform: translateY(-10px) scale(1.05);
+}
+
+.innerText {
+	width: fit-content;
+    background-color: #e6b909;
+    color: white;
+    font-size: 14pt;
+    padding: 14px 28px;
+    border-radius: 10px;
+	margin: 0 auto;
+	transform: translateY(20px);
+
+    cursor: pointer;
+	transition: background 0.25s, transform 0.5s;
+}
+
+.innerText:hover {
+    background-color: #e6a709;
+}
+
+.nome-merch {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	transform: translateY(-140px);
+	transition: 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+	color: #e6a709;
+	font-size: 18pt;
+}

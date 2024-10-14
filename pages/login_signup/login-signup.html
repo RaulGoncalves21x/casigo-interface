@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title id="title">CasiGO | Iniciar Sessão</title>
+
+        <link rel="stylesheet" href="style_login-signup.css">
+        <link rel="stylesheet" href="../../assets/css/style.css">
+
+        <!--Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap" rel="stylesheet"/>
+
+        <!--Open Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        
+        <link rel="icon" href="../../assets/images/logo.png"/>
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="../home/index.html"><img src="../../assets/images/casigo-full-logo.png"/></a>
+            </div>
+            <div class="header-mid">
+                <ul>
+                    <div class="content">
+                        <li><a href="../games/games-gallery.html">Jogos</a></li>
+                    </div>
+                    <div class="content">
+                        <li><a href="../store/store-gallery.html">Merchandising</a></li>
+                    </div>
+                    <div class="content">
+                        <li><a href="../about/about-us.html">Sobre Nós</a></li>
+                    </div>
+            </div>
+            <div class="header-right">
+                <button class="login">Iniciar Sessão</button>
+                <button class="signup">Registar</button>
+            </div>
+        </header>
+
+        <div class="conta_container" id="login">
+            <div><img src="../../assets/images/casigo-icon-logo.png" alt="CasiGO logo"></div>
+            <div>
+                <form>
+                    <label>Início de Sessão</label><br>
+                    <input type="email" placeholder="E-Mail" required><br>
+                    <div>
+                        <input type="password" placeholder="Password" id="pass" required>
+                        <button type="button" onclick="showPass()" class="bi bi-eye" id="olho"></button>
+                    </div>
+                    <button style="margin-top: 30px;">Iniciar Sessão</button>
+                    <p class="link-text"><a href="#">Esqueceu-se da password?</a></p>
+                </form>
+                <hr/>
+                <div id="caixa-botaoRegistar">
+                    <p>Ainda não tem uma conta? <a href="javascript:mostrar_registar()">Crie uma agora</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="conta_container" id="registar">
+            <div><img src="../../assets/images/casigo-icon-logo.png" alt="CasiGO logo"></div>
+            <div>
+                <form>
+                    <label>Informações Pessoais</label><br>
+                    <input type="text" placeholder="Nome Completo" required><br>
+                    <input type="text" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="(this.type='text')" required><br><br><br>
+                    <label>Início de Sessão</label>
+                    <input type="email" placeholder="E-Mail" required><br>
+                    <div>
+                        <input type="password" placeholder="Insira a Password" id="pass2_0" required>
+                        <button type="button" onclick="showPass2()" class="bi bi-eye" id="olho2"></button>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Repita a Password" id="pass2_1" required>
+                        <button type="button" onclick="showPass3()" class="bi bi-eye" id="olho3"></button>
+                    </div><br/>
+                    <button>Criar Conta</button>
+                </form>
+                <hr/>
+                <div id="caixa-botaoLogin">
+                    <p>Já tem uma conta? <a href="javascript:mostrar_login()">Inicie sessão aqui</a></p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class=footer-container>
+                <div class="left">
+                    <div><p>Termos e Condições</p></div>
+                    <div><p>Política de Privacidade</p></div>
+                    <div><p>Jogo Responsável</p></div>
+                    <div><p>Proteção Contra Fraude</p></div>
+                </div>
+                <div>
+                    <div><p>Fórum de Discussão</p></div>
+                    <div><p>Facebook</p></div>
+                    <div><p>Twitter</p></div>
+                    <div><p>Afiliados</p></div>
+                </div>
+            </div>
+            <div class="direitos">© CasiGO. Todos os Direitos Reservados</div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="scripts_login-signgup.js"></script>
+</html>
