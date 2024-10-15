@@ -69,6 +69,11 @@ To view the project locally, follow these steps:
 
 > **Note:** Since this project does not include a functional backend, all data is hardcoded, and no user data is saved. The focus is on design and client-side interactivity.
 
+## Group Members
+
+* Raul Gonçalves / GitHub: [@RaulGoncalves21x](https://github.com/RaulGoncalves21x)
+* André Cacheira / GitHub: [@Cacheira14](https://github.com/Cacheira14)
+
 ## License
 
 This project is for educational purposes only and is not intended for real-world use.
