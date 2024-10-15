@@ -1,9 +1,9 @@
 # CasiGO - Casino on the GO 🎰
 
 **Project Name:** CasiGO - Casino on the GO  
-**Discipline:** Interface Development  
-**Year:** 2021  
 **Technology Stack:** HTML, CSS, JavaScript
+**Discipline:** Interface Development | Universidade da Maia - Computer Science 
+**Year:** 2021  
 
 ## Project Overview
 
@@ -49,7 +49,7 @@ This project provided a hands-on opportunity to apply the fundamental skills of 
 │   └── icons/                # Icons used in the project (e.g., game icons)
 │
 ├── pages/
-│   ├── home/                 # Home page files
+│   ├── home/                 # Page directory containing all HTML, CSS and JS files
 │   │   ├── index.html
 │   │   ├── home.css
 │   │   └── home.js
